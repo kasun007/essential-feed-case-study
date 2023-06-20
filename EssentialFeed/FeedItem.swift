@@ -15,3 +15,4 @@ struct FeedItm {
     let imageURL :URL
     
 }
+ 
