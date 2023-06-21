@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FeedItm {
+struct FeedItem {
     
     let id:UUID
     let description :String?
