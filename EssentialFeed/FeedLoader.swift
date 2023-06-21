@@ -11,12 +11,13 @@ import Foundation
 
 enum LoadFeedResult{
     
-    case sucess ([FeedItem])
+    case sucess ([FeedItem ])
     case error (Error)
     
 }
 
 protocol FeedLoader{
     
-    func load(completion :@escaping ()->Void)
+    func load(completion :@escaping (LoadFeedResult)->Void)
+    
 }
