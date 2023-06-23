@@ -26,7 +26,7 @@ private class HTTPClientSpy :HTTPClient {
 
 class RemoteFeedLoaderTests:XCTestCase{
     
-    func test_init_doesNotRequestDataFromURL () {
+    func test_init_RequestsDataFromURL () {
         let client = HTTPClientSpy()
         let url = URL(string: "https://a-given-url.com")!
       
