@@ -7,32 +7,9 @@
 
 import XCTest
 
-class RemoteFeedLoader {
-    
-    let client :HTTPClient
-    let url :URL
-    
-    init(url :URL=URL(string: "https://adsds-url.com")! ,client :HTTPClient){
-        self.url = url
-        self.client = client
-    }
-    
-    func load(){
-        
-        client.get(from:url)
-        
-    }
-    
-    
-}
+@testable  import EssentialFeed
 
-protocol HTTPClient{
-   
-    
-    func get(from url :URL)
-      
-     
-}
+
 
 
 private class HTTPClientSpy :HTTPClient {
